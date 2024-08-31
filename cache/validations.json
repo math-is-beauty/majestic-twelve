@@ -152,6 +152,1455 @@
         },
         "solcVersion": "0.8.24"
       },
+      "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol:IUniswapV3Pool": {
+        "src": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol:16",
+        "inherit": [
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:IUniswapV3PoolEvents",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:IUniswapV3PoolErrors",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:IUniswapV3PoolOwnerActions",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:IUniswapV3PoolActions",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:IUniswapV3PoolDerivedState",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:IUniswapV3PoolState",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:IUniswapV3PoolImmutables"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:IUniswapV3PoolActions": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize(uint160)",
+          "mint(address,int24,int24,uint128,bytes)",
+          "collect(address,int24,int24,uint128,uint128)",
+          "burn(int24,int24,uint128)",
+          "swap(address,bool,int256,uint160,bytes)",
+          "flash(address,uint256,uint256,bytes)",
+          "increaseObservationCardinalityNext(uint16)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:IUniswapV3PoolDerivedState": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "observe(uint32[])",
+          "snapshotCumulativesInside(int24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:IUniswapV3PoolErrors": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:IUniswapV3PoolEvents": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:IUniswapV3PoolImmutables": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "token0()",
+          "token1()",
+          "fee()",
+          "tickSpacing()",
+          "maxLiquidityPerTick()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:IUniswapV3PoolOwnerActions": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setFeeProtocol(uint8,uint8)",
+          "collectProtocol(address,uint128,uint128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:IUniswapV3PoolState": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "slot0()",
+          "feeGrowthGlobal0X128()",
+          "feeGrowthGlobal1X128()",
+          "protocolFees()",
+          "liquidity()",
+          "ticks(int24)",
+          "tickBitmap(int16)",
+          "positions(bytes32)",
+          "observations(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/libraries/FullMath.sol:FullMath": {
+        "src": "@uniswap/v3-core/contracts/libraries/FullMath.sol:7",
+        "version": {
+          "withMetadata": "2d18a9e6f02d6cc00d231fcd1e39676c0148f3ea38cbfb44b27241a47a2690c4",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/libraries/TickMath.sol:TickMath": {
+        "src": "@uniswap/v3-core/contracts/libraries/TickMath.sol:7",
+        "version": {
+          "withMetadata": "dbdab81de1d759aa379d62f1795f9e5786e4575a37e481128a2476773f4ddf3d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:OracleLibrary": {
+        "src": "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:10",
+        "version": {
+          "withMetadata": "682d77e7d46e11e07ca92deb35773bcd879f3e0b5e09aea5d88c7a0a7530856b",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@uniswap/v3-core/contracts/libraries/TickMath.sol:TickMath",
+          "@uniswap/v3-core/contracts/libraries/FullMath.sol:FullMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3Distribution.sol:SafeMath": {
+        "src": "contracts/UniswapV3Distribution.sol:10",
+        "version": {
+          "withMetadata": "02ae8df1ff621e45db0f7cfb1b54d2e7970c37dc8c5296f24f211e63e275abd2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3Distribution.sol:UniswapV3RateDistribution": {
+        "src": "contracts/UniswapV3Distribution.sol:26",
+        "version": {
+          "withMetadata": "45009a52f0d14b114e9e7b789b4b727383540a0c47667ef473d24a01f006eb2e",
+          "withoutMetadata": "86b81ce9d90e3864e3e8f3ad3576c904a7a0e57d7984a73cc7d9d189edb86575",
+          "linkedWithoutMetadata": "86b81ce9d90e3864e3e8f3ad3576c904a7a0e57d7984a73cc7d9d189edb86575"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/UniswapV3Distribution.sol:SafeMath",
+          "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:OracleLibrary"
+        ],
+        "methods": [
+          "(address,address,bool,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UniswapV3RateDistribution",
+            "src": "contracts/UniswapV3Distribution.sol:39"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "poolAddress",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:32"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)225",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:34"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:35"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:36"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:37"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IERC20)225": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol:AggregatorV3Interface": {
+        "src": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "decimals()",
+          "description()",
+          "version()",
+          "getRoundData(uint80)",
+          "latestRoundData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:IERC20Permit": {
+        "src": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:19",
+        "version": {
+          "withMetadata": "d88862f2fa4e2c267909e9f637bc95ed5b9187f9704f796b740e0f893393d784",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "d2ef729539a0a1e5a7b2ed7654b37d4a35b089225b4761b0c2c18cb3426bd031",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:105"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol:IUniswapV3Pool": {
+        "src": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol:16",
+        "inherit": [
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:IUniswapV3PoolEvents",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:IUniswapV3PoolErrors",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:IUniswapV3PoolOwnerActions",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:IUniswapV3PoolActions",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:IUniswapV3PoolDerivedState",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:IUniswapV3PoolState",
+          "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:IUniswapV3PoolImmutables"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:IUniswapV3PoolActions": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize(uint160)",
+          "mint(address,int24,int24,uint128,bytes)",
+          "collect(address,int24,int24,uint128,uint128)",
+          "burn(int24,int24,uint128)",
+          "swap(address,bool,int256,uint160,bytes)",
+          "flash(address,uint256,uint256,bytes)",
+          "increaseObservationCardinalityNext(uint16)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:IUniswapV3PoolDerivedState": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "observe(uint32[])",
+          "snapshotCumulativesInside(int24,int24)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:IUniswapV3PoolErrors": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolErrors.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:IUniswapV3PoolEvents": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:IUniswapV3PoolImmutables": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "token0()",
+          "token1()",
+          "fee()",
+          "tickSpacing()",
+          "maxLiquidityPerTick()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:IUniswapV3PoolOwnerActions": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setFeeProtocol(uint8,uint8)",
+          "collectProtocol(address,uint128,uint128)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:IUniswapV3PoolState": {
+        "src": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "slot0()",
+          "feeGrowthGlobal0X128()",
+          "feeGrowthGlobal1X128()",
+          "protocolFees()",
+          "liquidity()",
+          "ticks(int24)",
+          "tickBitmap(int16)",
+          "positions(bytes32)",
+          "observations(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/libraries/FullMath.sol:FullMath": {
+        "src": "@uniswap/v3-core/contracts/libraries/FullMath.sol:7",
+        "version": {
+          "withMetadata": "2d18a9e6f02d6cc00d231fcd1e39676c0148f3ea38cbfb44b27241a47a2690c4",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-core/contracts/libraries/TickMath.sol:TickMath": {
+        "src": "@uniswap/v3-core/contracts/libraries/TickMath.sol:7",
+        "version": {
+          "withMetadata": "dbdab81de1d759aa379d62f1795f9e5786e4575a37e481128a2476773f4ddf3d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:OracleLibrary": {
+        "src": "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:10",
+        "version": {
+          "withMetadata": "682d77e7d46e11e07ca92deb35773bcd879f3e0b5e09aea5d88c7a0a7530856b",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@uniswap/v3-core/contracts/libraries/TickMath.sol:TickMath",
+          "@uniswap/v3-core/contracts/libraries/FullMath.sol:FullMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/ChainlinkRateDistribution.sol:ChainlinkRateDistribution": {
+        "src": "contracts/ChainlinkRateDistribution.sol:26",
+        "version": {
+          "withMetadata": "40c4915d23c6455f6c9a0a8546e473310576b410e4f3d7f060d072c543064b43",
+          "withoutMetadata": "5f363a24f9441ff3c3d438ecebf59c6e6ab57a9961b93f986a70d393296b9b32",
+          "linkedWithoutMetadata": "5f363a24f9441ff3c3d438ecebf59c6e6ab57a9961b93f986a70d393296b9b32"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/ChainlinkRateDistribution.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,bool,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)",
+          "getChainlinkDataFeedLatestAnswer()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ChainlinkRateDistribution",
+            "src": "contracts/ChainlinkRateDistribution.sol:39"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "dataFeed",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(AggregatorV3Interface)45",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistribution.sol:32"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)271",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistribution.sol:34"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistribution.sol:35"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistribution.sol:36"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistribution.sol:37"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(AggregatorV3Interface)45": {
+              "label": "contract AggregatorV3Interface",
+              "numberOfBytes": "20"
+            },
+            "t_contract(IERC20)271": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/ChainlinkRateDistribution.sol:SafeMath": {
+        "src": "contracts/ChainlinkRateDistribution.sol:10",
+        "version": {
+          "withMetadata": "baabb8933303450236042da7967dacd8b4358497062b5b4e841232b739a77f83",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/ChainlinkRateDistributionToken.sol:ChainlinkRateDistribution": {
+        "src": "contracts/ChainlinkRateDistributionToken.sol:26",
+        "version": {
+          "withMetadata": "fb1c5024e3eecafeb5b9255c1f9a0ad651d3876306bb72e8c981f3f77c41b33f",
+          "withoutMetadata": "f69d7bbaf614be1b7a73649538d228b352fdd1fb0a449928c5833e73ea0ca99f",
+          "linkedWithoutMetadata": "f69d7bbaf614be1b7a73649538d228b352fdd1fb0a449928c5833e73ea0ca99f"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/ChainlinkRateDistributionToken.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,bool,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)",
+          "getChainlinkDataFeedLatestAnswer()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ChainlinkRateDistribution",
+            "src": "contracts/ChainlinkRateDistributionToken.sol:39"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "dataFeed",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(AggregatorV3Interface)45",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistributionToken.sol:32"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)271",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistributionToken.sol:34"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistributionToken.sol:35"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistributionToken.sol:36"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/ChainlinkRateDistributionToken.sol:37"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(AggregatorV3Interface)45": {
+              "label": "contract AggregatorV3Interface",
+              "numberOfBytes": "20"
+            },
+            "t_contract(IERC20)271": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/ChainlinkRateDistributionToken.sol:SafeMath": {
+        "src": "contracts/ChainlinkRateDistributionToken.sol:10",
+        "version": {
+          "withMetadata": "df0458ef71154d2dee6d3c49dd1805b663783472118d50cded51ad1d3f456ec9",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3Distribution.sol:SafeMath": {
+        "src": "contracts/UniswapV3Distribution.sol:10",
+        "version": {
+          "withMetadata": "3ae6faf88b92c757171ff15bd14ee581ac873b0a0a8689f59b4de76d34e97342",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3Distribution.sol:UniswapV3RateDistribution": {
+        "src": "contracts/UniswapV3Distribution.sol:26",
+        "version": {
+          "withMetadata": "224ffdfe4c93d3ea0d8baf6a95d629b6d2e11f83768d5c704f75625602422a44",
+          "withoutMetadata": "7c5e6f419fece7856ad6dcc723e40c810248f59226ccb5f6d9f2044b2450524b",
+          "linkedWithoutMetadata": "7c5e6f419fece7856ad6dcc723e40c810248f59226ccb5f6d9f2044b2450524b"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/UniswapV3Distribution.sol:SafeMath",
+          "@uniswap/v3-periphery/contracts/libraries/OracleLibrary.sol:OracleLibrary"
+        ],
+        "methods": [
+          "(address,address,bool,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UniswapV3RateDistribution",
+            "src": "contracts/UniswapV3Distribution.sol:39"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "poolAddress",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:32"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)271",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:34"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:35"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:36"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "UniswapV3RateDistribution",
+              "src": "contracts/UniswapV3Distribution.sol:37"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IERC20)271": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3DistributionToken.sol:ChainlinkRateDistribution": {
+        "src": "contracts/UniswapV3DistributionToken.sol:26",
+        "version": {
+          "withMetadata": "831d0aade39f4d97192e5a3b4617fee53f16bac54e54f5f5094b9bda60afccc5",
+          "withoutMetadata": "84433d0b86ecc0232234d31f698356f38f67e7e20433b6c589352733a611eef5",
+          "linkedWithoutMetadata": "84433d0b86ecc0232234d31f698356f38f67e7e20433b6c589352733a611eef5"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/UniswapV3DistributionToken.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,bool,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)",
+          "getChainlinkDataFeedLatestAnswer()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ChainlinkRateDistribution",
+            "src": "contracts/UniswapV3DistributionToken.sol:39"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "dataFeed",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(AggregatorV3Interface)45",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/UniswapV3DistributionToken.sol:32"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)271",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/UniswapV3DistributionToken.sol:34"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/UniswapV3DistributionToken.sol:35"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/UniswapV3DistributionToken.sol:36"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "ChainlinkRateDistribution",
+              "src": "contracts/UniswapV3DistributionToken.sol:37"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(AggregatorV3Interface)45": {
+              "label": "contract AggregatorV3Interface",
+              "numberOfBytes": "20"
+            },
+            "t_contract(IERC20)271": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/UniswapV3DistributionToken.sol:SafeMath": {
+        "src": "contracts/UniswapV3DistributionToken.sol:10",
+        "version": {
+          "withMetadata": "d615dba0e9d835af0acf0acb4ef31f050bcf42920d85ce2ce65a31e135899087",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:IERC20Permit": {
+        "src": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:19",
+        "version": {
+          "withMetadata": "d88862f2fa4e2c267909e9f637bc95ed5b9187f9704f796b740e0f893393d784",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "d2ef729539a0a1e5a7b2ed7654b37d4a35b089225b4761b0c2c18cb3426bd031",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:105"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
       "contracts/APICall.sol:APICall": {
         "src": "contracts/APICall.sol:24",
         "version": {

@@ -2,6 +2,7 @@
   "name": "majestic-twelve",
   "packageManager": "yarn@4.2.2",
   "devDependencies": {
+    "@chainlink/contracts": "^1.2.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-ethers": "^3.0.7",
     "@nomicfoundation/hardhat-ignition": "^0.15.5",
@@ -18,5 +19,9 @@
     "hardhat-deploy-ethers": "^0.4.2",
     "hardhat-gas-reporter": "^2.2.1",
     "solidity-coverage": "^0.8.12"
+  },
+  "dependencies": {
+    "@uniswap/v3-core": "./v3-core",
+    "@uniswap/v3-periphery": "./v3-periphery"
   }
 }
