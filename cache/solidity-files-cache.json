@@ -975,6 +975,90 @@
         "FixedRateDistributionToken",
         "SafeMath"
       ]
+    },
+    "/home/tomas/Desktop/majestic-twelve/contracts/APICall.sol": {
+      "lastModificationDate": 1725069803262,
+      "contentHash": "588d265cf64b0fa1a4077bc172fb9756",
+      "sourceName": "contracts/APICall.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "APICall",
+        "SafeMath"
+      ]
+    },
+    "/home/tomas/Desktop/majestic-twelve/contracts/APICallToken.sol": {
+      "lastModificationDate": 1725069858100,
+      "contentHash": "bab80f3472adc8d8ba7eb617fc7f570b",
+      "sourceName": "contracts/APICallToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "APICallToken",
+        "SafeMath"
+      ]
     }
   }
 }
