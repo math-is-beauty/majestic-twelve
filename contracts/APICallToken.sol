@@ -60,7 +60,8 @@ contract APICallToken is Ownable {
     function makeApiCall(
         uint256 serviceId
     ) external {
-
+        require(serviceId < totalServices, "Service ID not found.");
+        
     }
 
     function setPaused(

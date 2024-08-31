@@ -57,7 +57,8 @@ contract APICall is Ownable {
     function makeApiCall(
         uint256 serviceId
     ) external payable {
-
+        require(serviceId < totalServices, "Service ID not found.");
+        
     }
 
     function setPaused(

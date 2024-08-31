@@ -69,24 +69,27 @@ contract ChainlinkRateDistribution is Ownable {
         );
     }
 
-    receive() external payable {
-        require(msg.value >= minimumAmount, "Insufficient ETH provided.");
+    function sendTokens(
+        address _to,
+        uint256 _amount
+    ) external {
+        require(_amount >= minimumAmount, "Insufficient tokens provided.");
         require(!paused, "Distribution is paused.");
 
-        uint256 rate = 1;
+        tokenAccepted.safeTransferFrom(msg.sender, address(this), _amount);
 
         uint256 tokensToPay = 0;
         if (multiply) {
-            tokensToPay = msg.value * rate;
+            tokensToPay = _amount * rate;
         } else {
-            tokensToPay = msg.value / rate;
+            tokensToPay = _amount / rate;
         }
 
         require(
             tokensToPay <= token.balanceOf(address(this)),
             "Not enough tokens available."
         );
-        token.safeTransfer(msg.sender, tokensToPay);
+        token.safeTransfer(_to, tokensToPay);
     }
 
     function setPaused(
