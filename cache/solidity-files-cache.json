@@ -933,6 +933,48 @@
       "artifacts": [
         "ReentrancyGuard"
       ]
+    },
+    "/home/tomas/Desktop/majestic-twelve/contracts/FixedRateDistributionToken.sol": {
+      "lastModificationDate": 1724889182612,
+      "contentHash": "4b7b7105635f207c4c3d15b4adc5720b",
+      "sourceName": "contracts/FixedRateDistributionToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "FixedRateDistributionToken",
+        "SafeMath"
+      ]
     }
   }
 }

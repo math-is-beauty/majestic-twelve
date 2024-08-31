@@ -44,6 +44,295 @@
         },
         "solcVersion": "0.8.24"
       },
+      "@openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:IERC20Permit": {
+        "src": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:19",
+        "version": {
+          "withMetadata": "d88862f2fa4e2c267909e9f637bc95ed5b9187f9704f796b740e0f893393d784",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "d2ef729539a0a1e5a7b2ed7654b37d4a35b089225b4761b0c2c18cb3426bd031",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:105"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FixedRateDistributionToken.sol:FixedRateDistributionToken": {
+        "src": "contracts/FixedRateDistributionToken.sol:24",
+        "version": {
+          "withMetadata": "b2a204f278768a375178c2eafe316ef34644f2b432f9bcab31a312b4031586f2",
+          "withoutMetadata": "bad9f3961784f417a6bae3f917328d196f916890302f11f5497380ebea071dc3",
+          "linkedWithoutMetadata": "bad9f3961784f417a6bae3f917328d196f916890302f11f5497380ebea071dc3"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:SafeERC20",
+          "contracts/FixedRateDistributionToken.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,address,bool,bool,uint256,uint256)",
+          "sendTokens(address,uint256)",
+          "setPaused(bool)",
+          "setRate(uint256)",
+          "setMinimumAmount(uint256)",
+          "setMultiply(bool)",
+          "withdrawToken(address,address,uint256)",
+          "withdrawETH(address payable,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "FixedRateDistributionToken",
+            "src": "contracts/FixedRateDistributionToken.sol:37"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(IERC20)225",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:30"
+            },
+            {
+              "label": "tokenAccepted",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(IERC20)225",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:31"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:32"
+            },
+            {
+              "label": "multiply",
+              "offset": 21,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:33"
+            },
+            {
+              "label": "rate",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:34"
+            },
+            {
+              "label": "minimumAmount",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "FixedRateDistributionToken",
+              "src": "contracts/FixedRateDistributionToken.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IERC20)225": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FixedRateDistributionToken.sol:SafeMath": {
+        "src": "contracts/FixedRateDistributionToken.sol:8",
+        "version": {
+          "withMetadata": "131ae6e840f5500d39e5bedaf45edff8e5370e26e57ee07690f7e10f215dafa6",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
       "@openzeppelin/contracts/interfaces/IERC5267.sol:IERC5267": {
         "src": "@openzeppelin/contracts/interfaces/IERC5267.sol:6",
         "inherit": [],
