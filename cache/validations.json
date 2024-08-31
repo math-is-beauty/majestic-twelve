@@ -2,6 +2,388 @@
   "version": "3.4",
   "log": [
     {
+      "contracts/FlatFixedRateDistribution.sol:Context": {
+        "src": "contracts/FlatFixedRateDistribution.sol:22",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FlatFixedRateDistribution.sol:FixedRateDistribution": {
+        "src": "contracts/FlatFixedRateDistribution.sol:244",
+        "version": {
+          "withMetadata": "d793cd9a612fdccaf42a6c80f6f97747099dedcdeaf8ca85ac7d6079695ba2fa",
+          "withoutMetadata": "a467b7455d878f89e51a55ad45cc4b0a945b927b46908b12793ce6d71b81602a",
+          "linkedWithoutMetadata": "a467b7455d878f89e51a55ad45cc4b0a945b927b46908b12793ce6d71b81602a"
+        },
+        "inherit": [
+          "contracts/FlatFixedRateDistribution.sol:Ownable",
+          "contracts/FlatFixedRateDistribution.sol:Context"
+        ],
+        "libraries": [
+          "contracts/FlatFixedRateDistribution.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setRate(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "FixedRateDistribution",
+            "src": "contracts/FlatFixedRateDistribution.sol:253"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts/FlatFixedRateDistribution.sol:57"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(IERC20)251",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FlatFixedRateDistribution.sol:249"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "1",
+              "type": "t_bool",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FlatFixedRateDistribution.sol:250"
+            },
+            {
+              "label": "rate",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FlatFixedRateDistribution.sol:251"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IERC20)251": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FlatFixedRateDistribution.sol:IERC20": {
+        "src": "contracts/FlatFixedRateDistribution.sol:149",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FlatFixedRateDistribution.sol:Ownable": {
+        "src": "contracts/FlatFixedRateDistribution.sol:56",
+        "inherit": [
+          "contracts/FlatFixedRateDistribution.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "contracts/FlatFixedRateDistribution.sol:74"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts/FlatFixedRateDistribution.sol:57"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FlatFixedRateDistribution.sol:SafeMath": {
+        "src": "contracts/FlatFixedRateDistribution.sol:228",
+        "version": {
+          "withMetadata": "8dbe581d526ac509e1e53ceba3a31296e4086f19dad5d8d1712f29356b401c7c",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FixedRateDistribution.sol:FixedRateDistribution": {
+        "src": "contracts/FixedRateDistribution.sol:23",
+        "version": {
+          "withMetadata": "d9d81779e4084f9b3a4cb01ff2bfec316bd405290653db247807340434c38874",
+          "withoutMetadata": "a467b7455d878f89e51a55ad45cc4b0a945b927b46908b12793ce6d71b81602a",
+          "linkedWithoutMetadata": "a467b7455d878f89e51a55ad45cc4b0a945b927b46908b12793ce6d71b81602a"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "contracts/FixedRateDistribution.sol:SafeMath"
+        ],
+        "methods": [
+          "(address,bool,uint256)",
+          "()",
+          "setPaused(bool)",
+          "setRate(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "FixedRateDistribution",
+            "src": "contracts/FixedRateDistribution.sol:32"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(IERC20)225",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FixedRateDistribution.sol:28"
+            },
+            {
+              "label": "paused",
+              "offset": 20,
+              "slot": "1",
+              "type": "t_bool",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FixedRateDistribution.sol:29"
+            },
+            {
+              "label": "rate",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "FixedRateDistribution",
+              "src": "contracts/FixedRateDistribution.sol:30"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IERC20)225": {
+              "label": "contract IERC20",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/FixedRateDistribution.sol:SafeMath": {
+        "src": "contracts/FixedRateDistribution.sol:7",
+        "version": {
+          "withMetadata": "42885aa129105548f688dda0ff89332810d4b0467561a5d40b606e75daac9a97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
       "contracts/FlatCustomERC20.sol:Context": {
         "src": "contracts/FlatCustomERC20.sol:22",
         "inherit": [],

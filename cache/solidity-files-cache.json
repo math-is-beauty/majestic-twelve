@@ -326,6 +326,91 @@
         "IMintableERC20",
         "Ownable"
       ]
+    },
+    "/home/tomas/Desktop/majestic-twelve/contracts/FixedRateDistribution.sol": {
+      "lastModificationDate": 1724801829716,
+      "contentHash": "7838256a4e8ee4c01715cdeaface494d",
+      "sourceName": "contracts/FixedRateDistribution.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "FixedRateDistribution",
+        "SafeMath"
+      ]
+    },
+    "/home/tomas/Desktop/majestic-twelve/contracts/FlatFixedRateDistribution.sol": {
+      "lastModificationDate": 1724801917606,
+      "contentHash": "7e95e14dc1de6e1ec861519ebf6e42a7",
+      "sourceName": "contracts/FlatFixedRateDistribution.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.20",
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "Context",
+        "FixedRateDistribution",
+        "IERC20",
+        "Ownable",
+        "SafeMath"
+      ]
     }
   }
 }
