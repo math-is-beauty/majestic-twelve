@@ -32,12 +32,14 @@ contract ChainlinkRateDistribution is Ownable {
     AggregatorV3Interface internal dataFeed;
 
     IERC20 token;
+    IERC20 tokenAccepted;
     bool paused;
     bool multiply;
     uint256 minimumAmount;
 
     constructor(
         address _token,
+        address _tokenAccepted,
         bool _paused,
         bool _multiply,
         uint256 _minimumAmount
@@ -49,6 +51,7 @@ contract ChainlinkRateDistribution is Ownable {
         minimumAmount = _minimumAmount;
 
         token = IERC20(_token);
+        tokenAccepted = IERC20(_tokenAccepted);
 
         /**
          * Network: Arbitrum
@@ -77,6 +80,8 @@ contract ChainlinkRateDistribution is Ownable {
         require(!paused, "Distribution is paused.");
 
         tokenAccepted.safeTransferFrom(msg.sender, address(this), _amount);
+
+        uint256 rate = 1;
 
         uint256 tokensToPay = 0;
         if (multiply) {

@@ -977,8 +977,8 @@
       ]
     },
     "/home/tomas/Desktop/majestic-twelve/contracts/APICall.sol": {
-      "lastModificationDate": 1725069803262,
-      "contentHash": "588d265cf64b0fa1a4077bc172fb9756",
+      "lastModificationDate": 1725259671542,
+      "contentHash": "a5a3f54552743fab65705a6dce894552",
       "sourceName": "contracts/APICall.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -1019,8 +1019,8 @@
       ]
     },
     "/home/tomas/Desktop/majestic-twelve/contracts/APICallToken.sol": {
-      "lastModificationDate": 1725069858100,
-      "contentHash": "bab80f3472adc8d8ba7eb617fc7f570b",
+      "lastModificationDate": 1725259684736,
+      "contentHash": "1042a8060634433b2cd8d4cde3ca3082",
       "sourceName": "contracts/APICallToken.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -1061,8 +1061,8 @@
       ]
     },
     "/home/tomas/Desktop/majestic-twelve/contracts/UniswapV3DistributionToken.sol": {
-      "lastModificationDate": 1725112944069,
-      "contentHash": "951b34ff05d3b2d668dc84da676e04cf",
+      "lastModificationDate": 1725259437519,
+      "contentHash": "eb73ec578dbffbf3d3278913a2da82d2",
       "sourceName": "contracts/UniswapV3DistributionToken.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -1141,8 +1141,8 @@
       ]
     },
     "/home/tomas/Desktop/majestic-twelve/contracts/ChainlinkRateDistributionToken.sol": {
-      "lastModificationDate": 1725112949801,
-      "contentHash": "1f0f384bb5a5517b5ba70b0f0f3e0bc4",
+      "lastModificationDate": 1725259442442,
+      "contentHash": "eb73ec578dbffbf3d3278913a2da82d2",
       "sourceName": "contracts/ChainlinkRateDistributionToken.sol",
       "solcConfig": {
         "version": "0.8.24",

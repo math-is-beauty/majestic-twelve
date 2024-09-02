@@ -27,15 +27,26 @@ contract APICallToken is Ownable {
     using SafeMath for uint;
     using SafeMath for uint256;
 
+    struct ServiceProvider {
+        // Stores the PGP public key of the service provider
+        bytes publicKey;
+    }
+
     struct Service {
+        uint256 serviceProvider;
         bool isOnline;
         // In ms. If it is zero, then it cannot timeout
         uint256 maxTimeout;
         uint256 pricePerCall;
+        // In ms. If it is zero, response will be instantly deleted after being returned once
+        uint256 responseStoredFor;
     }
 
     IERC20 token;
     IERC20 tokenAccepted;
+
+    mapping(uint => ServiceProvider) serviceProviderMap;
+    uint256 totalServiceProviders;
 
     mapping(uint => Service) serviceMap;
     uint256 totalServices;
@@ -51,6 +62,7 @@ contract APICallToken is Ownable {
     {
         paused = _paused;
 
+        totalServiceProviders = 0;
         totalServices = 0;
 
         token = IERC20(_token);
@@ -73,30 +85,65 @@ contract APICallToken is Ownable {
         paused = _paused;
     }
 
-    function addService(
-        bool isOnline,
-        uint256 maxTimeout,
-        uint256 pricePerCall
+    function addServiceProvider(
+        bytes calldata publicKey
     )
         external
         onlyOwner
     {
-        serviceMap[totalServices] = Service(isOnline, maxTimeout, pricePerCall);
+        serviceProviderMap[totalServiceProviders] = ServiceProvider(publicKey);
+
+        totalServiceProviders = totalServiceProviders + 1;
+    }
+
+    function editServiceProvider(
+        uint256 serviceProviderId,
+        bytes calldata publicKey
+    )
+        external
+        onlyOwner
+    {
+        require(serviceProviderId < totalServiceProviders, "Service provider not found.");
+
+        serviceProviderMap[serviceProviderId] = ServiceProvider(publicKey);
+    }
+
+    function addService(
+        uint256 serviceProviderId,
+        bool isOnline,
+        uint256 maxTimeout,
+        uint256 pricePerCall,
+        uint256 responseStoredFor
+    )
+        external
+        onlyOwner
+    {
+        require(serviceProviderId < totalServiceProviders, "Service provider not found.");
+
+        serviceMap[totalServices] = Service(serviceProviderId, isOnline, maxTimeout, pricePerCall, responseStoredFor);
 
         totalServices = totalServices + 1;
     }
 
     function editService(
         uint256 serviceId,
+        uint256 serviceProviderId,
         bool isOnline,
         uint256 maxTimeout,
-        uint256 pricePerCall
+        uint256 pricePerCall,
+        uint256 responseStoredFor
     )
         external
         onlyOwner
     {
         require(serviceId < totalServices, "Service ID not found.");
-        serviceMap[serviceId] = Service(isOnline, maxTimeout, pricePerCall);
+        serviceMap[serviceId] = Service(serviceProviderId, isOnline, maxTimeout, pricePerCall, responseStoredFor);
+    }
+
+    function getServiceProvider(
+        uint256 serviceProviderId
+    ) external view returns(ServiceProvider memory) {
+        return serviceProviderMap[serviceProviderId];
     }
 
     function getService(
